@@ -8,8 +8,6 @@ White: #FFF
 */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -90,69 +88,92 @@ h1 {
 }
 
 h2 {
+    font-size: 2em;
+    line-height: 2em;
+}
+
+p {
+    font-weight: lighter;
+}
+#what-is-on-spotify {
+    padding: 3em;
+}
+
+#what-is-on-spotify h2 {
   margin: 1em auto;
   text-align: center;
 }
 
-#what-is-on-spotify {
-  padding: 3em;
+#what-is-on-spotify span {
+    border-bottom: #00b172 3px solid;
+    padding-bottom: .3em;
 }
 
+
 .features-container {
-  display: flex;
-  justify-content: space-around;
-  padding: 2em;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
 }
 
 .features-container h3 {
-  margin-bottom: 1em;
-  color: #00b172;
+    margin-bottom: 1em;
+    color: #00b172;
 }
 
-h3 + p {
-  color: #1a1a1a;
-  text-align: center;
-  font-weight: lighter;
+.features-container h3 + p {
+    color: #1a1a1a;
+    text-align: center;
+    font-weight: lighter;
 }
 .features-container img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 0.5em;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.5em;
 }
 
 .features {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-  padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 0.5em;
 }
 
 #green-section {
-  background-image: url('../images/spotify-icon-white.png');
-  background-size: 4em;
-  background-repeat: no-repeat;
-  background-color: #00b172;
-  background-position: center;
+    background-image: url('../images/spotify-icon-white.png');
+    background-size: 4em;
+    background-repeat: no-repeat;
+    background-color: #00b172;
+    background-position: center;
 }
 
 .green-container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 .green-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40%;
 }
 
-.green-left h2 {
-  text-align: left;
-  margin: 2em, 0;
+.green-container h2 {
+    text-align: left;
+    margin-top: 0;
+}
+
+.green-container span {
+    border-bottom: white 3px solid;
+    padding-bottom: .3em;
 }
 
 #spotify-app {
-  margin: 2em;
-  height: 500px;
+  margin: 3em 2em;
+  height: 450px;
 }
